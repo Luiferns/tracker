@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocarina of Time Randomizer Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .item { display: inline-block; margin: 10px; }
+        img { width: 50px; height: 50px; cursor: pointer; }
+        .active { opacity: 1; }
+        .inactive { opacity: 0.5; }
+    </style>
+</head>
+<body>
+    <h1>Ocarina of Time Randomizer Tracker</h1>
+    <div class="tracker">
+        <div class="item" onclick="toggleItem(this)">
+            <img src="path_to_item_icon.png" alt="Item 1" class="inactive">
+            <p>Item 1</p>
+        </div>
+        <!-- Adicione mais itens aqui -->
+    </div>
+    <script>
+        function toggleItem(element) {
+            const img = element.querySelector('img');
+            img.classList.toggle('active');
+            img.classList.toggle('inactive');
+        }
+    </script>
+</body>
+</html>
